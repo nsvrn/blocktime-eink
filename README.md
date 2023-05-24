@@ -34,5 +34,5 @@
 
 ---
 - ##### For TFT/LCD and command line display, check this [repo](https://github.com/ns-xvrn/blocktime).
-- ##### Feedback or questions welcome over nostr: `npub13jntyztptpq73uagw2w8hsc3hrzw58qmrvxptearjqp42xwq9kgs7jf32m`
+- ##### Feedback/questions are welcome over nostr: `npub13jntyztptpq73uagw2w8hsc3hrzw58qmrvxptearjqp42xwq9kgs7jf32m`
 ---
