@@ -25,10 +25,9 @@
 ---
 #### Data Source
 - This code uses [blockchair](https://api.blockchair.com/bitcoin/stats) public API over https
-- You can replace the API to your choice by editing the `refreshData()` and  `jsonToStr` functions (and the root cert)
-- The root CA cert is in the code and valid until 2035, can be changed [here](https://github.com/ns-xvrn/blocktime-eink/blob/main/ttgo_t5s_27/ttgo_t5s_27.ino#L20)
-- Stats in the screenshot(T5s 2.7in):
-    - Block number, price in USD, sats per USD, tx fee, hashrate, difficulty, #nodes, full node data size, datetime in UTC
+- You can replace the API to your choice by editing the `refreshData()` and  `jsonToStr()` functions (and the root cert)
+- If needed the root CA cert can be changed [here](https://github.com/ns-xvrn/blocktime-eink/blob/main/ttgo_t5s_27/ttgo_t5s_27.ino#L20)
+- Stats in the screenshot(T5s 2.7in): block number, price in USD, sats per USD, tx fee, hashrate, difficulty, #nodes, full node data size, datetime in UTC
 
 <br />
 
