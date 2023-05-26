@@ -57,19 +57,15 @@ const char* rootCACertificate = \
 void setup()
 {
   display.init(115200, true, 2, false);
-  connectWifi();
 }
 
 
 void connectWifi()
 {
   WiFi.begin(WIFI_SSID, WIFI_PW);
-  delay(300);
-  while (WiFi.status() != WL_CONNECTED)
-  {
-    displayText("Connected \n  (" + String(WIFI_SSID) + ")");
-  }
-  delay(1000);
+  delay(500);
+  while (WiFi.status() != WL_CONNECTED){}
+  Serial.println("Connected!");
 }
 
 
@@ -127,8 +123,7 @@ String jsonToStr(DynamicJsonDocument d)
   int nodeSize = int(d["data"]["blockchain_size"].as<float>()/(pow(1024, 3)));
     
   String dtm = d["context"]["cache"]["since"].as<String>();
-  Serial.println(dtm);
-  Serial.println(dtm.length());
+  
   if (dtm.length() == 19){
     dtm.remove(16, 3);
     dtm.replace(" ", brk + "~");
@@ -170,7 +165,12 @@ String fmtNum(int num){
 
 void loop() 
 {
+  connectWifi();
   refreshData();
+  
+  WiFi.disconnect();
+  WiFi.mode(WIFI_OFF);
   display.hibernate();
+
   delay(REFRESH_DELAY * 60 * 1000); 
 }
