@@ -13,10 +13,6 @@
 #include "GxEPD2_display_selection_added.h"
 
 
-extern const char *WIFI_SSID;
-extern const char *WIFI_PW; 
-extern int REFRESH_DELAY;
-
 // Root CA Cert for https://api.blockchair.com/bitcoin/stats
 // valid until Mon, 04 Jun 2035 11:04:38 GMT
 const char* rootCACertificate = \
