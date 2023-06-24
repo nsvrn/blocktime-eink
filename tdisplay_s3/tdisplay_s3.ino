@@ -169,7 +169,9 @@ void refreshData()
     https.end();
   }
   else{
-    displayText("HTTP request error:" + String(httpCode));
+    displayText("HTTP request error: " + String(httpCode) + ", re-trying in 2 min.....");
+    delay(2 * 60 * 1000);
+    refreshData();
   }
 }
 
