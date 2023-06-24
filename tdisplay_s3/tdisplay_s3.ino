@@ -130,13 +130,13 @@ void displayText(String msg = "", int textSize = 1)
       msg = "$" + fmtNum(stats.price);
       tft.drawString(msg, 12, 4, 4);
       // Price
-      tft.setTextColor(TFT_CYAN, TFT_BLACK);
+      tft.setTextColor(TFT_CYAN);
       tft.setTextSize(2);
       msg = "#" + fmtNum(stats.height);
       tft.drawString(msg, 28, 82, 4);
 
       // Moscow time | Fee
-      tft.setTextColor(TFT_RED, TFT_BLACK);
+      tft.setTextColor(TFT_WHITE);
       tft.setTextSize(1);
       
       msg = stats.moscowTime  + "  |  " 
