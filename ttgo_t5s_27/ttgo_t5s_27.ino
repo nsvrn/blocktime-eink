@@ -2,7 +2,7 @@
 #include <WiFiClientSecure.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
-#include <config.h>
+#include "config.h"
 
 #include <GxEPD2_BW.h>
 #include <GxEPD2_3C.h>
