@@ -1,5 +1,4 @@
 #### ₿locktime (for esp32 eink/LCD displays) 
-#### [blocktime.ink](http://blocktime.ink)
 ---
 
 ![alt blocktime-eink](blocktime-eink.png)
