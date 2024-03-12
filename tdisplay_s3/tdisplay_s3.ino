@@ -225,12 +225,13 @@ void setup()
     tft.setSwapBytes(true);
     delay(2000);
 
-    ledcSetup(0, 2000, 8);
-    ledcAttachPin(PIN_LCD_BL, 0);
-    ledcWrite(0, 255);
+    //ledcSetup(0, 2000, 8);
+    //ledcAttachPin(PIN_LCD_BL, 0);
+    ledcAttach(PIN_LCD_BL, 200, 8);
+    ledcWrite(PIN_LCD_BL, 255);
 
     displayText("Connecting to " + String(WIFI_SSID) + ".......");
-    connectWifi();
+    // connectWifi();
 }
 
 void loop(){
@@ -238,4 +239,3 @@ void loop(){
   refreshData();   
   delay(REFRESH_DELAY * 60 * 1000);
 }
-
