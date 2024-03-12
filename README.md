@@ -5,6 +5,8 @@
 ![alt tdisplay s3](tdisplays3.jpg)
 ---
 #### Setup
+> NOTE: The esp32 library has breaking changes in the latest libraries (v3.0+) for the colored display, not fixed in this repo yet, [details here](https://docs.espressif.com/projects/arduino-esp32/en/latest/migration_guides/2.x_to_3.0.html#new-apis)
+
 1. Hardware:
     - eink: TTGO [T5s](https://www.lilygo.cc/products/t5s-2-7inch-e-paper) 2.7in/[T5](https://www.lilygo.cc/products/t5-v2-3-1) 2.13in (or any similar ESP32 based eink can work with some minor code tweaks from these)
     - Color LCD: [TDisplay-S3](https://www.lilygo.cc/products/t-display-s3)
