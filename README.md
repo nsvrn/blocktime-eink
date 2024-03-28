@@ -22,6 +22,8 @@
         ```
     - Install these libraries from Arduino IDE (Tools > Manage Libraries): Arduinojson, GxEPD2, Adafruit GFX, Adafruit BusIO
     - For TDisplay-S3: copy this [git repo's](https://github.com/Xinyuan-LilyGO/T-Display-S3) lib folder content to your Arduino libraries folder
+    - Make sure esp32 by esspressif is installed under Tools > Board > Board Manager
+    - `pip install pyserial`
 3. Connect, configure and upload:
     - Connect your device with usb and make sure to run `sudo chmod 666 /dev/ttyACM0` (replace ACM0 with your correct device location)
     - Open the correct main `.ino` file in Arduino IDE and point to correct device location
