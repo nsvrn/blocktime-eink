@@ -20,12 +20,13 @@
             https://dl.espressif.com/dl/package_esp32_index.json
             https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
         ```
+    - `pip install pyserial`
     - Install these libraries from Arduino IDE (Tools > Manage Libraries): Arduinojson, GxEPD2, Adafruit GFX, Adafruit BusIO
     - For TDisplay-S3: copy this [git repo's](https://github.com/Xinyuan-LilyGO/T-Display-S3) lib folder content to your Arduino libraries folder
     - Make sure esp32 by esspressif is installed under Tools > Board > Board Manager
-    - `pip install pyserial`
 3. Connect, configure and upload:
     - Connect your device with usb and make sure to run `sudo chmod 666 /dev/ttyACM0` (replace ACM0 with your correct device location)
+    - If esp32 board library is installed correctly, you will be able to select "LilyGo T-Display" as the board manager.
     - Open the correct main `.ino` file in Arduino IDE and point to correct device location
     - Rename `config_sample.h` to `config.h` and uncomment+edit to add your WiFi SSID/password and refresh frequency
     - Compile and upload, phew!
